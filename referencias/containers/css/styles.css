@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: unset;
+
+}
+
+.generic-section {
+    min-height: 300px;
+    padding: 40px 20px;
+
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+
+}
+
+.bg-yellow {
+    background-color: yellow;
+
+}
+
+.generic-section p {
+    font-size: 24px;
+}
+
+.generic-section h2 {
+    font-size: 32px;
+}
+
+.container {
+    /* configuração basica de countainers */
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    /*usado para centralizar em relação ao "pai"*/
+}
+
+
+
+footer {
+    padding: 40px 20px;
+    min-height: 200px;
+    /* altura minima*/
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  
+}
+footer img {
+    max-width: 300px;
+    max-height: 400px;
+
+}
+
+
+.footer-links-container a {
+    display: block;
+}
+
+.img-links img{
+    max-width: 40px;
+    max-height: 40px;
+}
+.footer-content { 
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer p { 
+display: block;
+
+}
+
+.footer-content p { 
+
+    display: block;
+}
+
+.p-flower { 
+
+margin-left: 100px;
+}
