@@ -7,12 +7,22 @@
     --gray-text: #797979;
     --news-background: #F0F0F0;
     --red-color: #DD7E92;
+    --footer-backgroud: #383838;
 
 }
 
 html {
     background-color: var(--gray-background);
     font-family: 'poppins', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+p {
+    color: var(--gray-text);
+
 }
 
 A {
@@ -26,6 +36,18 @@ A {
     margin: 0;
     padding: 0;
     list-style: none
+}
+
+
+footer {
+    background-color: var(--footer-backgroud);
+    width: 100%;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .container {
@@ -48,15 +70,25 @@ A {
 }
 
 .nav-list {
-    display: none;
 
+    color: var(--white-text);
+
+
+}
+
+#menu-option {
+
+    display: none;
 }
 
 .profile-avatar {
     width: 62px;
     height: 62px;
     margin-right: 10px;
+
+
 }
+
 
 .nav-container h1 {
     color: var(--white-text);
@@ -67,19 +99,27 @@ A {
 .news-title {
     text-align: center;
     margin-top: 40px;
-    font-size: 1.5rem;
-    color: var(--gray-text);
     margin-bottom: 24px;
-    text-transform: uppercase;
+    font-size: 24px;
 }
 
 .notice-title {
     color: var(--junglegreen-background);
     font-size: 1rem;
+}
 
-
+.notice-sub-title {
+    font-size: 12px;
+    font-weight: 700;
 
 }
+
+.title-form {
+    font-size: 24px;
+    margin: 40px 0 68px 0;
+    text-align: center;
+}
+
 
 .news-container {
     border-radius: 8px;
@@ -90,25 +130,19 @@ A {
     box-shadow: 1px 4px 4px gray;
     margin: 0 10px 28px 10px;
 
-}
-
-.notice-sub-title {
-    color: var(--gray-text);
-    font-size: 12px;
-    font-weight: 700;
 
 }
 
 .notice-text {
     font-size: 10px;
-    color: var(--gray-text);
-
 }
 
 .news-container time {
 
     color: var(--junglegreen-background);
 }
+
+
 
 
 .read-more {
@@ -151,9 +185,215 @@ A {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     margin-bottom: 27px;
+    text-align: center;
+    max-width: 300px;
 }
 
-.assessment-game img {
+.game-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% - 20px);
+    background-color: var(--white-text);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    width: calc(100%)
+    margin: auto;
+    margin-bottom: 27px;
+    max-width: 300px;
+}
+
+.assessment-game h3 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.game-card img {
+    border-radius: 8px;
+    width: calc(100%);
+    max-width: 300px;
+}
+
+.span-txt {
+    color: var(--junglegreen-background);
+
+}
+
+.game-note {
+    font-size: 36px;
+    color: var(--junglegreen-background);
+    font-weight: 700;
+}
+
+
+
+.assessment-game h2 {
+    font-weight: 700;
+    font-size: 18px;
+
+
+}
+
+
+.form-container {
+    justify-content: center;
+    margin: 20px;
+    color: var(--gray-text);
+    box-shadow: 1px 4px 4px gray;
+    border-radius: 8px;
+    padding: 52px 12px 33px;
+}
+
+
+
+
+.inscription input {
+    width: calc(100% - 40px);
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--white-text);
+    border: 1px solid #797979;
+    border-radius: 4px;
+
+}
+
+.form-console {
+    margin-left: 12px;
+
+}
+
+
+
+.button-sent {
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: var(--white-text);
+    background-color: var(--red-color);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 47px;
+
+}
+
+.button-clean {
+    display: flex;
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: var(--red-color);
+    background-color: var(--white-text);
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: 2px solid var(--red-color);
+}
+
+.footer-content {
+    margin: 28px;
+
+}
+
+.footer-content p {
+    color: var(--white-text);
+
+
+}
+
+
+
+@media(min-width: 576px) {
+
+    *h1 {
+        font-size: 36px;
+
+    }
+
+    .news-title {
+        font-size: 36px;
+    }
+
+
+    .nav-list {
+        display: flex;
+        color: var(--white-text);
+        margin: 20px;
+        font-size: 14px;
+        align-items: center;
+
+    }
+
+
+    #menu-option {
+        margin: 0 14.5px;
+        display: flex;
+    }
+
+    .button-read-more {
+        margin-bottom: 92px;
+    }
+
+    .games-container h1 {
+        font-size: 36px;
+        margin-bottom: 73px;
+    }
+
+
+
+    .assessment-game {
+        width: calc(100% - 20px);
+        background-color: var(--white-text);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        margin-bottom: 27px;
+        text-align: center;
+
+    }
+
+    .game-card {
+        display: inline-flex;
+        margin: 13px;
+        margin-bottom: 109px;
+
+    }
+
+    .game-card img {
+        width: 300px;
+    }
+
+    .assessment-game h3 {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+
+    .form-container {
+        max-width: 790px;
+        margin: auto;
+        margin-bottom: 61px;
+
+    }
+
+    .button-clean,
+    .button-sent {
+        margin: 0 auto;
+        margin-bottom: 113px;
+    }
+
+    #novidades {
+        margin-bottom: 38px;
+    }
+    .buttons-submit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    
+    }
 }
