@@ -1,0 +1,207 @@
+:root {
+    --body-color: #f4f2ec;
+    --link-color: #af670a;
+    --link-hover: #227115;
+    --link-background-hover: #af995c;
+    --visit-background: #cdc8b1;
+    --h4-color: #86521a;
+    --form-color: #ada484;
+    --bttn-bkg-color: #9b9271;
+    --h3-color: #227115;
+}
+
+* {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    background: var(--body-color) url(../img/fundo.png) repeat-x;
+    font: 12 px
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: var(--link-hover);
+
+}
+
+header {
+    padding: 15px 0;
+    height: 55px;
+
+}
+
+footer {
+    clear: both;
+    padding: 20px 0 30px 0;
+    background: var(--body-color) url(../img/fundo-rodape.png);
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p a{ 
+
+    padding: 3px;
+}
+
+#logo a {
+    width: 248px;
+    height: 21px;
+    text-indent: -9999px;
+    display: block;
+    background: url(../img/logo.png) no-repeat;
+}
+
+#logo h1 {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a:link {
+    display: block;
+    margin-right: 25px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid var(--link-hover);
+}
+
+#body-content {
+    width: 710px;
+    float: left;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 350px;
+    float: right;
+    text-align: center;
+
+}
+
+section#visit {
+    background: var(--visit-background);
+    padding: 10px 27px 27px 27px;
+    margin-top: 10px;
+}
+
+h4 {
+    color: var(--h4-color);
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+
+}
+
+h3 {
+    color: var(--link-hover);
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+input {
+    height: 20px;
+    width: 80px;
+    background: #fff;
+    border: none;
+    font-size: 1em;
+}
+
+input.form-input {
+    border: 1px solid var(--form-color);
+
+}
+
+input.form-btt {
+    background: var(--bttn-bkg-color);
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+
+}
+
+fieldset {
+    border: none;
+
+}
+
+legend {
+    display: none;
+
+}
+
+
+
+section#galery a {
+    display: block;
+    background: url(../img/fundo-foto.png) no-repeat;
+    float: left;
+    padding: 18px;
+    margin: 10px 0 0 20px;
+
+}
+
+section#galery img {
+    margin-left: 5px;
+    height: 93px;
+    width: 93px;
+}
+
+article#video {
+    float: left;
+    width: 310px;
+    margin-left: 25px;
+
+}
+
+article#map {
+    float: left;
+    width: 310px;
+    margin-left: 37px;
+}
+
+article#expo {
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 25px;
+}
+
+article#history {
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 37px;
+}
